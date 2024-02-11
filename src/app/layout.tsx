@@ -1,18 +1,18 @@
-"use client";
+"use client"
 
-import { Header, User } from "@/stories/Header";
-import { useState } from "react";
-import "./globals.css";
-import styles from "./layout.module.css";
+import { Header, User } from "@/stories/Header"
+import { useState } from "react"
+import "./globals.css"
+import styles from "./layout.module.css"
 
-const title = "Parks App Demo";
+const title = "Parks App Demo"
 
 export default function RootLayout({
 	children,
 }: Readonly<{
-	children: React.ReactNode;
+	children: React.ReactNode
 }>) {
-	const [user, setUser] = useState<User | undefined>(undefined);
+	const [user, setUser] = useState<User | undefined>(undefined)
 
 	return (
 		<html lang="en">
@@ -27,20 +27,20 @@ export default function RootLayout({
 						onCreateAccount={() => {
 							setUser({
 								name: "New User",
-							});
+							})
 						}}
 						onLogin={() => {
 							setUser({
 								name: "Existing User",
-							});
+							})
 						}}
 						onLogout={() => {
-							setUser(undefined);
+							setUser(undefined)
 						}}
 					/>
 					<div className={styles.page}>{children}</div>
 				</div>
 			</body>
 		</html>
-	);
+	)
 }

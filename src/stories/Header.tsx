@@ -1,17 +1,17 @@
-import React from "react";
-import { Button } from "./Button";
-import styles from "./Header.module.scss";
+import React from "react"
+import { Button } from "./Button"
+import styles from "./Header.module.scss"
 
 export type User = {
-	name: string;
-};
+	name: string
+}
 
 interface HeaderProps {
-	user?: User;
-	title: string;
-	onLogin: () => void;
-	onLogout: () => void;
-	onCreateAccount: () => void;
+	user?: User
+	title: string
+	onLogin: () => void
+	onLogout: () => void
+	onCreateAccount: () => void
 }
 
 export const Header = ({
@@ -48,4 +48,4 @@ export const Header = ({
 			</div>
 		</div>
 	</header>
-);
+)
