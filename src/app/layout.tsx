@@ -3,7 +3,7 @@
 import { Header, User } from "@/stories/Header"
 import { useState } from "react"
 import "./globals.css"
-import styles from "./layout.module.css"
+import styles from "./layout.module.scss"
 
 const title = "Parks App Demo"
 
@@ -18,6 +18,7 @@ export default function RootLayout({
 		<html lang="en">
 			<head>
 				<title>{title}</title>
+				<meta name="description" content="This is my site." />
 			</head>
 			<body>
 				<div className={styles.main}>

@@ -1,6 +1,6 @@
-import type { Preview } from "@storybook/react";
+import type { Preview } from "@storybook/react"
 
-import "../src/app/globals.css";
+import "../src/app/globals.css"
 
 const preview: Preview = {
 	parameters: {
@@ -16,11 +16,11 @@ const preview: Preview = {
 			values: [
 				{
 					name: "Primary",
-					value: "rgb(var(--background-rgb))",
+					value: "var(--background-primary)",
 				},
 			],
 		},
 	},
-};
+}
 
-export default preview;
+export default preview

@@ -8,14 +8,17 @@
 }
 
 .primary {
-	color: white;
-	background-color: #1ea7fd;
+	color: var(--accent-text);
+	background-color: var(--accent-secondary);
+	&:hover {
+		background-color: var(--accent-primary);
+	}
 }
 
 .secondary {
-	color: rgba(var(--foreground-rgb), 0.75);
+	color: var(--foreground-primary);
 	background-color: transparent;
-	box-shadow: rgba(var(--foreground-rgb), 0.25) 0px 0px 0px 1px inset;
+	box-shadow: var(--foreground-primary) 0px 0px 0px 1px inset;
 }
 
 .small {
