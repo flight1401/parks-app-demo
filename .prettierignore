@@ -2,6 +2,5 @@
 *.jsx
 *.ts
 *.tsx
-*.json
 /.next/
 /out/

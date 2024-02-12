@@ -1,5 +1,6 @@
 "use client"
 
+import { Header, User } from "@/stories/Header"
 import "@aaronellington/reset-css"
 import { useState } from "react"
 import styles from "./layout.module.scss"
