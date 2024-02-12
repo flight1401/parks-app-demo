@@ -1,6 +1,6 @@
 import type { Preview } from "@storybook/react"
 
-import "../src/app/globals.css"
+import "@aaronellington/reset-css"
 
 const preview: Preview = {
 	parameters: {
@@ -16,7 +16,11 @@ const preview: Preview = {
 			values: [
 				{
 					name: "Primary",
-					value: "var(--background-primary)",
+					value: "var(--reset-css-background-primary)",
+				},
+				{
+					name: "Secondary",
+					value: "var(--reset-css-background-secondary)",
 				},
 			],
 		},

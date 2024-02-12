@@ -7,8 +7,8 @@
 	flex-grow: 1;
 
 	& > div {
-		border: 1px solid var(--background-muted);
-		background: var(--background-primary);
+		border: 1px solid var(--reset-css-background-muted);
+		background: var(--reset-css-background-primary);
 		border-radius: 0.5rem;
 		padding: 15px 20px;
 	}

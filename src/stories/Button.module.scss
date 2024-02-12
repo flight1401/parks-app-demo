@@ -8,17 +8,20 @@
 }
 
 .primary {
-	color: var(--accent-text);
-	background-color: var(--accent-secondary);
+	color: var(--reset-css-accent-text);
+	background-color: var(--reset-css-accent-primary);
 	&:hover {
-		background-color: var(--accent-primary);
+		background-color: var(--reset-css-accent-secondary);
 	}
 }
 
 .secondary {
-	color: var(--foreground-primary);
+	color: var(--reset-css-foreground-primary);
 	background-color: transparent;
-	box-shadow: var(--foreground-primary) 0px 0px 0px 1px inset;
+	box-shadow: var(--reset-css-foreground-primary) 0px 0px 0px 1px inset;
+	&:hover {
+		background-color: transparent;
+	}
 }
 
 .small {

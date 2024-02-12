@@ -1,8 +1,7 @@
 "use client"
 
-import { Header, User } from "@/stories/Header"
+import "@aaronellington/reset-css"
 import { useState } from "react"
-import "./globals.css"
 import styles from "./layout.module.scss"
 
 const title = "Parks App Demo"
